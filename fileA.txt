@@ -1,5 +1,7 @@
 feature 1 wiht 1 bug
 feature 1 wiht bug fix
+feature 1 wiht bug fix
+feature 2
 
 
 
