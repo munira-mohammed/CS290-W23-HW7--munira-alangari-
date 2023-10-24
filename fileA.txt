@@ -1,2 +1,3 @@
 feature 1 wiht 1 bug
+feature 2
 
