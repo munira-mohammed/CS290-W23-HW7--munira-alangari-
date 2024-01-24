@@ -1,0 +1,45 @@
+# .codefactor.yml
+
+# Specify the programming language of your repository
+language: dart
+
+# Specify the directories or files to include in the analysis
+include:
+  - lib/**/*.dart
+  - test/**/*.dart
+
+# Specify the directories or files to exclude from the analysis
+exclude:
+  - lib/generated/**
+
+# Specify the rules for code analysis
+rules:
+  # Rule for enforcing a maximum line length
+  - name: Line Length
+    enabled: true
+    configurations:
+      max_length: 100
+
+  # Rule for enforcing consistent indentation
+  - name: Indentation
+    enabled: true
+    configurations:
+      type: spaces
+      size: 2
+
+  # Rule for detecting unused variables
+  - name: Unused Variables
+    enabled: true
+
+# Specify additional settings
+settings:
+  # Set the severity level for issues (error, warning, or info)
+  severity: error
+
+  # Specify any additional CodeFactor plugins or extensions to use
+  plugins:
+    - plugin-name
+
+  # Specify any additional configuration options
+  options:
+    option-name: option-value
